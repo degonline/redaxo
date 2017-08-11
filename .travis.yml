@@ -7,6 +7,10 @@ php:
     - 7.1
     - 7.2
     
+env:
+    # make php-cs-fixer work with php7.2 until it gets a proper release
+    - PHP_CS_FIXER_IGNORE_ENV=1
+    
 matrix:
   fast_finish: true
   include:
